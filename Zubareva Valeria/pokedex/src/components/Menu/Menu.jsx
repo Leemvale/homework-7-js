@@ -13,7 +13,7 @@ export default class Menu extends Component {
                <Navbar.Collapse>
                    <Nav>
                        <LinkContainer to="/main">
-                           <NavItem>Pokedex</NavItem>
+                           <NavItem>Pokemons</NavItem>
                        </LinkContainer>
                        <LinkContainer to ="/caught-pokemons">
                            <NavItem>Caught</NavItem>

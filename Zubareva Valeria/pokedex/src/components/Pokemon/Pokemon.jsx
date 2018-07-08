@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import "./Pokemon.css"
+import "./Pokemon.css";
 import { Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 export default class Pokemon extends Component {
@@ -29,8 +30,10 @@ export default class Pokemon extends Component {
         let {name, id} = pokemon;
         return (
             <Col className="pokemon" xs={6} md={3} >
-                <img className={"pokemon-img"} src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${pokemon.id}.png`}/>
-                <p className={"pokemon-name"}>{pokemon.name}</p>
+                <Link to={`/pokemons/${id}`}>
+                    <img className={"pokemon-img"} src={`https://raw.githubusercontent.com/epam-js-may-2018/homework-7-js/master/pokemons/${pokemon.id}.png`}/>
+                    <p className={"pokemon-name"}>{name.charAt(0).toUpperCase() + name.slice(1)}</p>
+                </Link>
                 <Button className={"caught-btn"} ref={this.caughtBtn} onClick={this.catchPokemon}>Catch</Button>
             </Col>
         );

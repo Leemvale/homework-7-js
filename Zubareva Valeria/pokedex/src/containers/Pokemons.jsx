@@ -45,4 +45,7 @@ export default class Pokemons extends Component {
             </div>
         );
     }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
 }
