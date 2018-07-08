@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { Grid, Row } from "react-bootstrap";
 import Pokemon from ".././Pokemon"
 
-class PokemonsList extends Component {
+export default class PokemonsList extends Component {
     render() {
         let {pokemons} = this.props;
         return (
@@ -14,4 +14,3 @@ class PokemonsList extends Component {
         );
     }
 }
-export default PokemonsList;

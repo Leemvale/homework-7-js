@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PokemonsList from "../components/PokemonsList"
 
-class Pokemons extends Component {
+export default class Pokemons extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,7 +27,7 @@ class Pokemons extends Component {
         let pageY = window.scrollY;
         let innerHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         console.log(pageY, innerHeight);
-        if(pageY >= innerHeight) {
+        if(pageY === innerHeight) {
             this.loadPokemons();
         }
     }
@@ -46,4 +46,3 @@ class Pokemons extends Component {
         );
     }
 }
-export default Pokemons;

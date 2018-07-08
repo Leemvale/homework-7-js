@@ -2880,5 +2880,35 @@
       "name": "hoopa",
       "id": 720
     }
+  ],
+  "caught-pokemons": [
+    {
+      "pokemonId": 2,
+      "id": 1
+    },
+    {
+      "pokemonId": 5,
+      "id": 2
+    },
+    {
+      "pokemonId": 6,
+      "id": 3
+    },
+    {
+      "pokemonId": 14,
+      "id": 4
+    },
+    {
+      "pokemonId": 54,
+      "id": 5
+    },
+    {
+      "pokemonId": 1,
+      "id": 6
+    },
+    {
+      "pokemonId": 1,
+      "id": 7
+    }
   ]
 }
