@@ -2,30 +2,37 @@
   "pokemons": [
     {
       "name": "bulbasaur",
+      "caught": true,
       "id": 1
     },
     {
       "name": "ivysaur",
+      "caught": true,
       "id": 2
     },
     {
       "name": "venusaur",
+      "caught": true,
       "id": 3
     },
     {
       "name": "charmander",
+      "caught": true,
       "id": 4
     },
     {
       "name": "charmeleon",
+      "caught": true,
       "id": 5
     },
     {
       "name": "charizard",
+      "caught": true,
       "id": 6
     },
     {
       "name": "squirtle",
+      "caught": true,
       "id": 7
     },
     {
@@ -38,6 +45,7 @@
     },
     {
       "name": "caterpie",
+      "caught": true,
       "id": 10
     },
     {
@@ -54,6 +62,7 @@
     },
     {
       "name": "kakuna",
+      "caught": true,
       "id": 14
     },
     {
@@ -90,6 +99,7 @@
     },
     {
       "name": "ekans",
+      "caught": true,
       "id": 23
     },
     {
@@ -2883,28 +2893,44 @@
   ],
   "caught-pokemons": [
     {
-      "pokemonId": 2,
+      "pokemonId": 1,
       "id": 1
     },
     {
-      "pokemonId": 5,
+      "pokemonId": 2,
       "id": 2
     },
     {
-      "pokemonId": 6,
+      "pokemonId": 3,
       "id": 3
     },
     {
-      "pokemonId": 14,
+      "pokemonId": 4,
       "id": 4
     },
     {
-      "pokemonId": 54,
+      "pokemonId": 5,
       "id": 5
     },
     {
-      "pokemonId": 1,
+      "pokemonId": 6,
       "id": 6
+    },
+    {
+      "pokemonId": 10,
+      "id": 7
+    },
+    {
+      "pokemonId": 7,
+      "id": 8
+    },
+    {
+      "pokemonId": 14,
+      "id": 9
+    },
+    {
+      "pokemonId": 23,
+      "id": 10
     }
   ]
 }

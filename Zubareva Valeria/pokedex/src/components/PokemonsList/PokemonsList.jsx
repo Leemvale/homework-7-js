@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { Grid, Row } from "react-bootstrap";
-import Pokemon from ".././Pokemon"
+import PokemonWithCatch from "../PokemonWithCatch";
 
 export default class PokemonsList extends Component {
     render() {
@@ -8,7 +8,7 @@ export default class PokemonsList extends Component {
         return (
             <Grid>
                 <Row>
-                    {pokemons.map((pokemon) => <Pokemon key={pokemon.id} pokemon={pokemon}/>)}
+                    {pokemons.map((pokemon) => <PokemonWithCatch key={pokemon.id} pokemon={pokemon}/>)}
                 </Row>
             </Grid>
         );
