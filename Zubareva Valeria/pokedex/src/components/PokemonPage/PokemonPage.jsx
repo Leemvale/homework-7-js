@@ -12,7 +12,7 @@ export default class PokemonPage extends Component {
             statusTag = <p className={"status caught"}>Caught</p>;
             timeTag = <p>Time: {new Date(pokemon.caughtPokemons[0].time).toLocaleString()}</p>
         }
-        return(
+        return (
             <Grid>
                 <Row>
                     <Col sm={5}>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import Pokemons from "./Pokemons.jsx"
 import PokemonsList from "../components/PokemonsList";
 

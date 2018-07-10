@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 export default class Menu extends Component {
     render() {
-       return(
+       return (
            <Navbar collapseOnSelect>
                <Navbar.Header>
                    <Navbar.Toggle />
