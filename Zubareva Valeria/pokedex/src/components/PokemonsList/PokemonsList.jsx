@@ -4,11 +4,11 @@ import PokemonWithCatch from "../PokemonWithCatch";
 
 export default class PokemonsList extends Component {
     render() {
-        let {pokemons} = this.props;
+        let {pokemons, catchPokemon} = this.props;
         return (
             <Grid>
                 <Row>
-                    {pokemons.map((pokemon) => <PokemonWithCatch key={pokemon.id} pokemon={pokemon}/>)}
+                    {pokemons.map((pokemon) => <PokemonWithCatch key={pokemon.id} pokemon={pokemon} catchPokemon={catchPokemon}/>)}
                 </Row>
             </Grid>
         );

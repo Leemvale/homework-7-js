@@ -5,16 +5,13 @@ export default class PokemonDetail extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            pokemon: {
-                id: 1,
-                name: "default name"
-            }
+            pokemon: null
         }
     }
 
     getPokemon() {
         let {id}= this.props.match.params;
-        fetch(`http://localhost:3000/pokemons/${id}`)
+        fetch(`http://localhost:3000/pokemons/${id}?_embed=caughtPokemons`)
             .then((response) => response.json())
             .then((pokemon) => {
                 this.setState({
@@ -29,7 +26,7 @@ export default class PokemonDetail extends Component {
     render() {
         let {pokemon} = this.state;
         return(
-            <PokemonPage pokemon = {pokemon}/>
+            pokemon ? <PokemonPage pokemon = {pokemon}/> : null
         )
     }
 }

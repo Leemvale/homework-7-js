@@ -10,9 +10,32 @@ export default class Pokemons extends Component {
         }
     }
 
+    catchPokemon = (pokemon) => {
+        fetch(`http://localhost:3000/caughtPokemons`, {
+            method: "post",
+            body: JSON.stringify({
+                pokemonId: pokemon.id,
+                time: new Date()
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        fetch(`http://localhost:3000/pokemons/${pokemon.id}`, {
+            method: "put",
+            body: JSON.stringify({
+                name: pokemon.name,
+                caught: true
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+
     loadPokemons = () => {
         let {pokemons, page} = this.state;
-        let url = `http://localhost:3000/pokemons?_page=${page}&_limit=20`;
+        let url = `http://localhost:3000/pokemons?_page=${page}&_limit=20?`;
         fetch(url)
             .then((response) => response.json())
             .then((newPokemons) => {
@@ -24,10 +47,9 @@ export default class Pokemons extends Component {
     }
 
     handleScroll = () => {
-        let pageY = window.scrollY;
-        let innerHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        console.log(pageY, innerHeight);
-        if(pageY === innerHeight) {
+        let scrollY = window.scrollY;
+        let allScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        if(scrollY === allScroll) {
             this.loadPokemons();
         }
     }
@@ -41,7 +63,7 @@ export default class Pokemons extends Component {
         let {pokemons} = this.state;
         return (
             <div>
-                <PokemonsList pokemons={pokemons}/>
+                <PokemonsList pokemons={pokemons} catchPokemon={this.catchPokemon}/>
             </div>
         );
     }
