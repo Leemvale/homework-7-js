@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import PokemonPage from "../components/PokemonPage"
 
 export default class PokemonDetail extends Component {

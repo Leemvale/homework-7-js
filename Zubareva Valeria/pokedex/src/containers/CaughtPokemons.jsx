@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import Pokemons from "./Pokemons.jsx"
-import PokemonsList from "../components/PokemonsList";
 
 export default class CaughtPokemons extends Pokemons {
     loadPokemons = () => {

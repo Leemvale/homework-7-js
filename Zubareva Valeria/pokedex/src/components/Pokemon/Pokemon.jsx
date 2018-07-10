@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./Pokemon.css";
 import { Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";

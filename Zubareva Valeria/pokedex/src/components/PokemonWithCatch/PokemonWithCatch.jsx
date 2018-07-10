@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import { Col} from "react-bootstrap";
+import React, { Component } from "react";
+import { Col } from "react-bootstrap";
 import Pokemon from "../Pokemon";
 import CatchButton from "../CatchButton"
 
